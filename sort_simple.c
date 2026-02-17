@@ -1,11 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_simple.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esnavarr <esnavarr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/02/17 16:00:33 by esnavarr          #+#    #+#             */
+/*   Updated: 2026/02/17 18:13:00 by esnavarr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
 	/*
-	Takes pointers to two t_list structures as input and sorts the first
-	stack containing four elements by performing a series of operations
-	that involve pushing elements to a second stack and using the previously
-	defined sort_three function.
+	Sorts the first stack containing four elements by performing a series of 
+	operations that involve pushing elements to a second stack and using the
+	previously defined sort_three function.
 	*/
 
 void	sort_4(t_list **stack_a, t_list **stack_b)
@@ -32,8 +42,7 @@ void	sort_4(t_list **stack_a, t_list **stack_b)
 }
 
 	/*
-	Simalar to sort_four, takes two pointers to pointers to t_list
-	structures as input and sorts the stack by pushing two elements
+	Simalar to sort_four, sorts the stack by pushing two elements
 	to stack_b, sorting the remaining three elements in stack_a,
 	then pushing the two elements back to stack_a.
 	*/
@@ -66,8 +75,8 @@ void	sort_5(t_list **stack_a, t_list **stack_b)
 
 	/*
 	Checks the size of the stack and calls a corresponding sorting
-	function to sort the stack, including sort_three, sort_four, and
-	sort_five. If the stack is already sorted, or if the size is 0 or 1,
+	function to sort the stack, including sort_3, sort_4, and
+	sort_4. If the stack is already sorted, or if the size is 0 or 1,
 	the function returns without performing any operations.
 	*/
 

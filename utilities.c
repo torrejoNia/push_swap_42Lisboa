@@ -1,8 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utilities.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esnavarr <esnavarr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/02/17 16:00:51 by esnavarr          #+#    #+#             */
+/*   Updated: 2026/02/17 16:38:08 by esnavarr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
 	/*
-	This function calculates the distance between a given
+	Calculates the distance between a given
 	index and the head of a linked list stack.
 	*/
 

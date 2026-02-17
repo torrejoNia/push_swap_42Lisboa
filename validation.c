@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   validation.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esnavarr <esnavarr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/02/17 16:00:56 by esnavarr          #+#    #+#             */
+/*   Updated: 2026/02/17 16:56:04 by esnavarr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
@@ -86,7 +97,7 @@ void	check_args(int argc, char **argv)
 			error_message("Error");
 		if (ft_contains(tmp, args, i) == 1)
 			error_message("Error");
-		if (tmp < INT_MIN || tmp > 2147483647)
+		if (tmp < INT_MIN || tmp > INT_MAX)
 			error_message("Error");
 		i++;
 	}

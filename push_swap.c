@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esnavarr <esnavarr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/02/17 15:59:42 by esnavarr          #+#    #+#             */
+/*   Updated: 2026/02/17 16:38:44 by esnavarr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
@@ -42,7 +53,7 @@ static void	init_stack(t_list **stack, int argc, char **argv)
 	Checks the size of the input stack and uses either the simple
 	sort or the radix sort algorithm to sort it. If the stack has
 	5 or fewer elements, it uses the simple sort algorithm.
-	Otherwise, it uses the radix sort algorithm to sort the stack.
+	Otherwise, it uses the radix sort algorithm.
 	*/
 
 static void	sort_stack(t_list **stack_a, t_list **stack_b)
@@ -56,7 +67,7 @@ static void	sort_stack(t_list **stack_a, t_list **stack_b)
 	/*
 	Takes integer inputs and sorts them using a stack data structure.
 	Checks if there are enough arguments, initializes the stacks,
-	sorts them, and then frees the memory used by the stacks.
+	sorts them, and finally frees the memory used by the stacks.
 	*/
 
 int	main(int argc, char **argv)

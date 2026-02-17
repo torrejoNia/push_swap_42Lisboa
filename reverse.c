@@ -1,9 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   reverse.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esnavarr <esnavarr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/02/17 16:00:11 by esnavarr          #+#    #+#             */
+/*   Updated: 2026/02/17 16:38:28 by esnavarr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
 	/*
-	Performs a reverse order of the linked list stack byswapping
-	its first and last elements. It returns -1 if the stack has less
+	Performs a reverse action of the linked list stack by moving 
+	its last element to the top. It returns -1 if the stack has less
 	than 2 elements.
 	*/
 
@@ -31,8 +42,8 @@ static int	reverse(t_list **stack)
 }
 
 	/*
-	Performs a reverse rotation of a linked list stack (A) by
-	moving its last element to the beginning. Prints "rra".
+	Performs a reverse action of a linked list stack (A) by
+	moving its last element to the top. Prints "rra".
 	*/
 
 int	rra(t_list **stack_a)
@@ -44,8 +55,8 @@ int	rra(t_list **stack_a)
 }
 
 	/*
-	Performs a reverse rotation of a linked list stack (B) by
-	moving its last element to the beginning. Prints "rrb".
+	Performs a reverse action of a linked list stack (B) by
+	moving its last element to the top. Prints "rrb".
 	*/
 
 int	rrb(t_list **stack_b)
@@ -57,8 +68,8 @@ int	rrb(t_list **stack_b)
 }
 
 	/*
-	Performs a simultaneous reverse rotation of both linked list stacks
-	(A and B) by moving their last elements to the beginning. Prints "rrr".
+	Performs a simultaneous reverse action of both linked list stacks
+	(A and B) by moving their last elements to the top. Prints "rrr".
 	*/
 
 int	rrr(t_list **stack_a, t_list **stack_b)

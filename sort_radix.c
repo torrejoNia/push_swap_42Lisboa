@@ -1,11 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_radix.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esnavarr <esnavarr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/02/17 16:00:27 by esnavarr          #+#    #+#             */
+/*   Updated: 2026/02/17 16:37:51 by esnavarr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
 	/*
 	Calculates the number of bits required to represent the
-	largest element in a stack of integers. It takes a pointer
-	to a pointer to a t_list structure as input and returns
-	the number of bits as an integer.
+	largest element in a stack of integers.
 	*/
 
 static int	get_max_bits(t_list **stack)

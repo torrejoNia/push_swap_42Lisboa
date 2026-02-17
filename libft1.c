@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft1.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esnavarr <esnavarr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/02/17 15:59:28 by esnavarr          #+#    #+#             */
+/*   Updated: 2026/02/17 17:52:55 by esnavarr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
@@ -50,27 +61,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		i++;
 	}
 	return (pt_dest);
-}
-
-static int	ft_count_words(char const *str, char c)
-{
-	int	i;
-	int	count;
-
-	i = 0;
-	count = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] == c)
-			i++;
-		else
-		{
-			count++;
-			while (str[i] && str[i] != c)
-				i++;
-		}
-	}
-	return (count);
 }
 
 char	*ft_strchr(const char *s, int c)

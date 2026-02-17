@@ -1,8 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esnavarr <esnavarr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/02/17 16:00:01 by esnavarr          #+#    #+#             */
+/*   Updated: 2026/02/17 16:38:33 by esnavarr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
 	/*
-	Performs a push to the top element of one stack into another
+	Pushes to the top element of one stack into another
 	stack, but returns -1 if the source stack is empty to indicate failure.
 	*/
 
@@ -34,7 +45,7 @@ static int	push(t_list **stack_to, t_list **stack_from)
 }
 
 	/*
-	Performs a push to the top element of stack (B) into stack (A) and prints
+	Pushes the top element of stack (B) into stack (A) and prints
 	"pa" to standard output. It returns -1 if the stack (B) is empty.
 	*/
 
@@ -47,7 +58,7 @@ int	pa(t_list **stack_a, t_list **stack_b)
 }
 
 	/*
-	Performs a push to the top element of stack (A) into stack (B) and prints
+	Pushes the top element of stack (A) into stack (B) and prints
 	"pb" to standard output. It returns -1 if the stack (A) is empty.
 	*/
 

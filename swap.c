@@ -1,8 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   swap.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esnavarr <esnavarr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/02/17 16:00:46 by esnavarr          #+#    #+#             */
+/*   Updated: 2026/02/17 18:12:02 by esnavarr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
 	/*
-	Performs a swap to the first two elements of a linked list
+	Swaps the first two elements of a linked list
 	stack and returns -1 if the stack has less than 2 elements.
 	*/
 
@@ -29,7 +40,7 @@ static int	swap(t_list **stack)
 }
 
 	/*
-	Performs a swap to the first two elements of a linked list stack (A)
+	Swaps the first two elements of a linked list stack (A)
 	and returns -1 if the stack has less than 2 elements. Prints "sa".
 	*/
 
@@ -42,7 +53,7 @@ int	sa(t_list **stack_a)
 }
 
 	/*
-	Performs a swap to the first two elements of a linked list stack (B)
+	Swaps the first two elements of a linked list stack (B)
 	and returns -1 if the stack has less than 2 elements. Prints "sb".
 	*/
 
@@ -55,12 +66,12 @@ int	sb(t_list **stack_b)
 }
 
 	/*
-	Performs swaps the first two elements of two linked list stacks (A and B),
+	Swaps the first two elements of two linked list stacks (A and B),
 	and returns -1 if either of the stacks has less than 2 elements. Prints "ss".
 	*/
 
 int	ss(t_list **stack_a, t_list **stack_b)
-{	
+{
 	if ((ft_lstsize(*stack_a) < 2) || (ft_lstsize(*stack_b) < 2))
 		return (-1);
 	swap(stack_a);

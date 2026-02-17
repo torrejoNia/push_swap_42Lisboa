@@ -1,8 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rotate.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esnavarr <esnavarr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/02/17 16:00:18 by esnavarr          #+#    #+#             */
+/*   Updated: 2026/02/17 16:38:24 by esnavarr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
 	/*
-	Performs a rotation of a linked list stack by moving its first
+	Performs a rotation action of a linked list stack by moving its first
 	element to the end. It returns -1 if the stack has less than 2 elements.
 	*/
 
@@ -22,7 +33,7 @@ static int	rotate(t_list **stack)
 }
 
 	/*
-	Performs a rotation of a linked list stack (A) by moving its
+	Performs a rotation action of a linked list stack (A) by moving its
 	first element to the end. Prints "ra".
 	*/
 
@@ -35,7 +46,7 @@ int	ra(t_list **stack_a)
 }
 
 	/*
-	Performs a rotation of a linked list stack (B) by moving its
+	Performs a rotation action of a linked list stack (B) by moving its
 	first element to the end. Prints "rb".
 	*/
 
