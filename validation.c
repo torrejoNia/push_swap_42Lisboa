@@ -6,7 +6,7 @@
 /*   By: esnavarr <esnavarr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 16:00:56 by esnavarr          #+#    #+#             */
-/*   Updated: 2026/02/17 16:56:04 by esnavarr         ###   ########.fr       */
+/*   Updated: 2026/02/23 16:05:11 by esnavarr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,28 @@ static char	**argc2(char *av)
 	are passed as a single string separated by spaces.
 	*/
 
+static void	check_argv(char	**argv)
+{
+	int		i;
+	long	tmp;
+	char	**args;	
+
+	i = 0;
+	args = argc2(argv[1]);
+	while (args[i])
+	{
+		tmp = ft_atoi(args[i]);
+		if (!ft_isnum(args[i]))
+			error_message_args(args);
+		if (ft_contains(tmp, args, i) == 1)
+			error_message_args(args);
+		if (tmp < INT_MIN || tmp > INT_MAX)
+			error_message_args(args);
+		i++;
+	}
+	free_string(args);
+}
+
 void	check_args(int argc, char **argv)
 {
 	int		i;
@@ -87,7 +109,10 @@ void	check_args(int argc, char **argv)
 
 	i = 1;
 	if (argc == 2)
-		args = argc2(argv[1]);
+	{
+		check_argv(argv);
+		return ;
+	}
 	else
 		args = argv;
 	while (args[i])
@@ -101,6 +126,4 @@ void	check_args(int argc, char **argv)
 			error_message("Error");
 		i++;
 	}
-	if (argc == 2)
-		free_string(args);
 }

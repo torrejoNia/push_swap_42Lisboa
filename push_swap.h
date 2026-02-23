@@ -6,7 +6,7 @@
 /*   By: esnavarr <esnavarr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 15:59:55 by esnavarr          #+#    #+#             */
-/*   Updated: 2026/02/17 17:51:54 by esnavarr         ###   ########.fr       */
+/*   Updated: 2026/02/23 15:59:06 by esnavarr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ int		get_min(t_list **stack, int val);
 
 // VALIDATION
 void	error_message(char *msg);
+void	error_message_args(char **str);
 void	check_args(int argc, char **argv);
 int		is_sorted(t_list **stack);
 
